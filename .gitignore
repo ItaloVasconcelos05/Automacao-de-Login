@@ -1,0 +1,32 @@
+# Arquivos de ambiente virtual do Python
+venv/
+/venv
+.venv/
+/.venv
+
+# Arquivos de cache do Python
+__pycache__/
+*.pyc
+
+# Arquivos de configuração de editores
+.vscode/
+.idea/
+
+# Arquivos gerados pelo Robot Framework
+results/
+log.html
+report.html
+output.xml
+
+# Arquivos de dependências e instalação
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente com dados sensíveis
+.env
