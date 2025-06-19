@@ -3,10 +3,14 @@ Library           SeleniumLibrary
 
 *** Keywords ***
 Realizar Login Com Sucesso
-    Preencher o Campo de Usuário    standard_user
-    Preencher o Campo de Senha    secret_sauce
+    [Arguments]    ${USUARIO}    ${SENHA}
+    Preencher o Campo de Usuário    ${USUARIO}  
+    Preencher o Campo de Senha    ${SENHA}    
     Clicar no Botão de Login
+    Verificar se o Login Foi Bem Sucedido
 
+Verificar se o Login Foi Bem Sucedido
+    Page Should Contain Element    xpath://span[@class="title" and text()="Products"]
 Preencher o Campo de Usuário 
     [Arguments]    ${USUARIO}
     Input Text      id:user-name      ${USUARIO}
