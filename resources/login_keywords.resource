@@ -1,9 +1,6 @@
 *** Settings ***
 Library           SeleniumLibrary
-
-*** Variables ***
-${PASTA_SCREENSHOTS}    ../results
-${URL}    https://www.saucedemo.com/
+Resource    ./login_variables.resource
 
 *** Keywords ***
 Iniciar Ambiente de Teste
