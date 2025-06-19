@@ -17,6 +17,7 @@ results/
 log.html
 report.html
 output.xml
+interactive_console_output.xml
 
 # Arquivos de dependências e instalação
 pip-wheel-metadata/
