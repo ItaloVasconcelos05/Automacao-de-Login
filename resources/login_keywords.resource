@@ -1,9 +1,6 @@
 *** Settings ***
 Library           SeleniumLibrary
-
-*** Variables ***
-${PASTA_SCREENSHOTS}    ../images
-${URL}    https://www.saucedemo.com/
+Resource    ./login_variables.resource
 
 *** Keywords ***
 Iniciar Ambiente de Teste
@@ -13,7 +10,6 @@ Iniciar Ambiente de Teste
     Open Browser    ${URL}    chrome
     Maximize Browser Window
     
-
 
 Realizar Login Com Sucesso
     [Arguments]    ${USUARIO}    ${SENHA}
