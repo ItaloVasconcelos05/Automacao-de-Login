@@ -2,7 +2,7 @@
 Library           SeleniumLibrary
 
 *** Variables ***
-${PASTA_SCREENSHOTS}    ../results
+${PASTA_SCREENSHOTS}    ../images
 ${URL}    https://www.saucedemo.com/
 
 *** Keywords ***
